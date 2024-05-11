@@ -80,39 +80,36 @@ background-size: cover;
 """
 st.markdown(page,unsafe_allow_html=True)
 
-def add_logo():
-    st.markdown(
-        """
-        <style>
+st.markdown(
+    """
+    <style>
         
-            [data-testid="stSidebarContent"]::before {
-            content: "Ezan Vakti";
+        [data-testid="stSidebarContent"]::before {
+        content: "Ezan Vakti";
+        margin-left: 20px;
+        margin-top: 50px;
+        margin-bottom: 200px; 
+        font-size: 40px;
+        position: relative;
+        top: 100px;
+        }
+        
+        [data-testid="stSidebarContent"] {
+            background-image: url(https://e1.pxfuel.com/desktop-wallpaper/871/576/desktop-wallpaper-islamic-iphone-islam.jpg);
+            padding-top: 120px;
+            background-size: cover;
+        }
+        [data-testid="stSidebarContent"]::after {
+            content: "https://github.com/mehmetbl";
             margin-left: 20px;
             margin-top: 50px;
             margin-bottom: 200px; 
-            font-size: 40px;
+            font-size: 18px;
             position: relative;
             top: 100px;
-            }
-        
-            [data-testid="stSidebarContent"] {
-                background-image: url(https://e1.pxfuel.com/desktop-wallpaper/871/576/desktop-wallpaper-islamic-iphone-islam.jpg);
-                padding-top: 120px;
-                background-size: cover;
-            }
-            [data-testid="stSidebarContent"]::after {
-                content: "https://github.com/mehmetbl";
-                margin-left: 20px;
-                margin-top: 50px;
-                margin-bottom: 200px; 
-                font-size: 18px;
-                position: relative;
-                top: 100px;
-            }
+        }
             
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
-add_logo()
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
